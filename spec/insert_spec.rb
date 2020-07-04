@@ -1,3 +1,6 @@
+
+require "sqlite3"
+require "/Users/zeynab/Flatiron/Mod1/sql-organizing-bears-lab-nyc04-seng-ft-053120/bin/sql_runner.rb"
 describe 'populating the bears table' do
   before do
     @db = SQLite3::Database.new(':memory:')
