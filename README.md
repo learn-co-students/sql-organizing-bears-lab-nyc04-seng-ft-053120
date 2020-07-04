@@ -56,7 +56,13 @@ Get the tests in `spec/create_spec.rb` to pass. Your `CREATE` statement should l
 
 ```sql
 CREATE TABLE bears (
-  //columns here
+id INTEGER PRIMARY KEY,
+name TEXT,
+  age INTEGER,
+  gender TEXT,
+  color TEXT,
+  temperament TEXT,
+  alive BOOLEAN,
 );
 ```
 
@@ -70,7 +76,7 @@ Your columns should be the following types:
 |gender |text   | <-- Should be a single, capitalized letter: 'M' or 'F'
 |color  |text   |
 |temperament | text|
-|alive  |boolean|
+|alive  |boolean|,
 
 Read about [SQLite3 Datatypes](https://www.sqlite.org/datatype3.html) to determine what your insert values are going to be. Be sure to pay attention to how booleans are expressed in SQLite3.
 

@@ -7,12 +7,12 @@ class SQLRunner
   end
 
   def execute_create_file
-    sql = File.read("lib/create.sql")
+    sql = File.read("/Users/zeynab/Flatiron/Mod1/sql-organizing-bears-lab-nyc04-seng-ft-053120/lib/create.sql")
     @db.execute_batch(sql)
   end
 
   def execute_insert_file
-    sql = File.read("lib/insert.sql")
+    sql = File.read("/Users/zeynab/Flatiron/Mod1/sql-organizing-bears-lab-nyc04-seng-ft-053120/lib/insert.sql")
     @db.execute_batch(sql)
   end
 
